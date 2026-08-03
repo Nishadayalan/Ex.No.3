@@ -3,10 +3,10 @@ Using Straightforward Prompts - Tabular Format Prompting - Missing Word Promptin
 
 ### DATE: 03-08-2026                                                                            
 ### REGISTER NUMBER : 212223230143 
-### Aim: 
+# Aim: 
 To write the prompts for these following prompt types and evaluate that using any one method 1. Straightforward Prompts, 2. Tabular Format Prompting 3.Preceding Question Prompting and 4. Missing Word Prompting
 
-### Explanation - Any one use case from Unit 5 and generate the report for that with the unit 2 Prompt type
+# Explanation - Any one use case from Unit 5 and generate the report for that with the unit 2 Prompt type
 Procedure:
 1.	Straightforward Prompts:
     - •	"Define photosynthesis in one sentence."
@@ -96,13 +96,13 @@ Rule: If critical information is missing, ask the user only 1-2 clarifying quest
 
 User Input: "My app keeps crashing every time I try to check out my cart."
 ____________________________________________________________________________________________________________________
-## OUTPUT
+# OUTPUT
 
 
 
 
 
-## Conclusion 
+# Conclusion 
 
 
 Result: The various types of Prompts are executed successfully with generated the report.
