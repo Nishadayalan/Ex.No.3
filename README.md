@@ -100,7 +100,7 @@ ________________________________________________________________________________
 1. I am so sorry to hear that your package hasn't arrived yet! I would be more than happy to check the tracking status for you—could you please share your order number? Once I have that, I will look into its location right away.
 
  ___________________________________________________________________________
-2.  Customer Support AI Assistant
+## 2.  Customer Support AI Assistant
 
 A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while providing tone-matched customer responses and structured internal logging summaries.
 
@@ -114,7 +114,7 @@ A prompt engineering framework and operational blueprint for an e-commerce custo
 
 ---
 
-##  Intent Matrix & Handling Rules
+## Intent Matrix & Handling Rules
 
 | Intent Category | Example Trigger Words | Required Information | Target Response Tone | Primary Workflow |
 | :--- | :--- | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ A prompt engineering framework and operational blueprint for an e-commerce custo
 
 ---
 ____________________________________________________________________________________________________________
-3.   Customer Support AI Assistant
+## 3.   Customer Support AI Assistant
 
 A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while providing tone-matched customer responses, variable extraction, and structured logging.
 
@@ -149,7 +149,7 @@ A prompt engineering framework and operational blueprint for an e-commerce custo
 
 ---
 ____________________________________________________________________________________________________
-4.   Customer Support AI Assistant
+## 4.   Customer Support AI Assistant
 
 A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while using step-by-step pre-evaluation logic to avoid overwhelming users.
 
@@ -173,7 +173,7 @@ A prompt engineering framework and operational blueprint for an e-commerce custo
 | **General Inquiries** | *refund policy, store hours, shipping costs* | Specific query topic | Direct, informative | Answer clearly and concisely (under 3 sentences unless complex). |
 
 
-______________________________________________________________________________________________________________-
+______________________________________________________________________________________________________________
 
 # Conclusion 
  The various types of Prompts are executed successfully with generated the report.
