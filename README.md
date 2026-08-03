@@ -96,20 +96,85 @@ Rule: If critical information is missing, ask the user only 1-2 clarifying quest
 
 User Input: "My app keeps crashing every time I try to check out my cart."
 ____________________________________________________________________________________________________________________
-# OUTPUT
+# Output
+1. I am so sorry to hear that your package hasn't arrived yet! I would be more than happy to check the tracking status for you—could you please share your order number? Once I have that, I will look into its location right away.
+ ____________________________________________________________
+2. # Customer Support AI Assistant
+
+A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while providing tone-matched customer responses and structured internal logging summaries.
+
+---
+
+##  Features
+
+* **Intent Recognition:** Automatically categorizes inquiries into defined support workflows.
+* **Dynamic Tone Alignment:** Adapts voice (Reassuring, Patient, Direct) based on user context and severity.
+* **Structured Output Logging:** Outputs both customer-facing responses and standardized internal logs for CRM / ticketing integration.
+
+---
+
+##  Intent Matrix & Handling Rules
+
+| Intent Category | Example Trigger Words | Required Information | Target Response Tone | Primary Workflow |
+| :--- | :--- | :--- | :--- | :--- |
+| **Order Tracking** | *where is my package, delayed, shipping status, track order* | Order ID, Tracking Number | Reassuring, efficient | Politely request missing order details; look up package location. |
+| **Troubleshooting** | *broken, not working, error code, setup issue* | Device model, specific symptom | Patient, step-by-step | Walk through troubleshooting steps or direct to returns portal if hardware fails. |
+| **General Inquiries** | *refund policy, store hours, shipping costs* | Specific query topic | Direct, informative | Answer clearly and concisely (under 3 sentences unless complex). |
+
+---
+____________________________________________________________________________________________________________
+3. #  Customer Support AI Assistant
+
+A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while providing tone-matched customer responses, variable extraction, and structured logging.
+
+---
+
+##  Features
+
+* **Intent Recognition & Emotion Analysis:** Identifies user intent and underlying sentiment to tailor the response.
+* **Variable Extraction Template:** Dynamically fills missing metadata fields (`[_____]`) prior to generating final output.
+* **Dynamic Tone Alignment:** Adapts voice (Reassuring, Patient, Direct) based on user context and severity.
+* **Structured Output Logging:** Outputs customer-facing responses along with standardized internal logs for CRM / ticketing integration.
+
+---
+
+## Intent Matrix & Handling Rules
+
+| Intent Category | Example Trigger Words | Required Information | Target Response Tone | Primary Workflow |
+| :--- | :--- | :--- | :--- | :--- |
+| **Order Tracking** | *where is my package, delayed, shipping status, track order* | Order ID, Tracking Number | Reassuring, efficient | Politely request missing order details; look up package location. |
+| **Troubleshooting** | *broken, not working, error code, setup issue* | Device model, specific symptom | Patient, step-by-step | Walk through troubleshooting steps or direct to returns portal if hardware fails. |
+| **General Inquiries** | *refund policy, store hours, shipping costs* | Specific query topic | Direct, informative | Answer clearly and concisely (under 3 sentences unless complex). |
+
+---
+____________________________________________________________________________________________________
+4. #  Customer Support AI Assistant
+
+A prompt engineering framework and operational blueprint for an e-commerce customer support AI model. Designed to handle order tracking, technical troubleshooting, and general inquiries while using step-by-step pre-evaluation logic to avoid overwhelming users.
+
+---
+
+## Features
+
+* **Pre-Evaluation Logic:** Evaluates target platform, missing parameters, and safety risks prior to responding.
+* **Streamlined Troubleshooting:** Requests missing critical details first rather than dumping multi-step solutions upfront.
+* **Variable Extraction & Tagging:** Identifies intent, emotion, and missing parameters to enable downstream CRM logging.
+* **Dynamic Tone Alignment:** Adapts voice (Reassuring, Patient, Direct) based on severity and context.
+
+---
+
+## Intent Matrix & Handling Rules
+
+| Intent Category | Example Trigger Words | Required Information | Target Response Tone | Primary Workflow |
+| :--- | :--- | :--- | :--- | :--- |
+| **Order Tracking** | *where is my package, delayed, shipping status, track order* | Order ID, Tracking Number | Reassuring, efficient | Politely request missing order details; look up package location. |
+| **Troubleshooting** | *broken, crash, error code, setup issue* | App version, OS / Device model, specific symptom | Patient, step-by-step | Ask 1–2 clarifying questions first; present non-destructive fixes before complex steps. |
+| **General Inquiries** | *refund policy, store hours, shipping costs* | Specific query topic | Direct, informative | Answer clearly and concisely (under 3 sentences unless complex). |
 
 
-
-
+______________________________________________________________________________________________________________-
 
 # Conclusion 
-
-
-Result: The various types of Prompts are executed successfully with generated the report.
-
-
-
-
-## Result:
-Thus the Prompts were exected succcessfully.
+ The various types of Prompts are executed successfully with generated the report.
+ 
 
