@@ -1,4 +1,5 @@
-# Ex.No.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques for the the following Prompt Engineering types with examples - Straightforward Prompts - Tabular Format Prompting - Missing Word Prompting - Preceding Question Prompting.
+# Ex.No.3  To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. 
+Using Straightforward Prompts - Tabular Format Prompting - Missing Word Prompting - Preceding Question Prompting techniques.
 
 ### DATE: 03-08-2026                                                                            
 ### REGISTER NUMBER : 212223230143 
@@ -24,37 +25,79 @@ Procedure:
 ## Use Case: Renewable Energy & Electric Mobility
 (Selected Domain: Sustainable Technology)
 
-## Prompt 
-1. Straightforward Prompting
-Direct, concise instructions requiring short, unadorned responses.
+# Prompt 
+## 1. Straightforward Prompting
+Concept
+Direct instruction that explicitly defines the role, task, constraints, and tone without complex formatting or step-by-step pre-thinking.
 
-Prompt 1.1: "Define regenerative braking in one sentence."
+Designed Prompt
+Role: You are a helpful customer support AI for an e-commerce platform.
 
-Prompt 1.2: "List three key advantages of electric vehicles over internal combustion engine vehicles."
-________________________________________________________________________________________________
-2. Tabular Format Prompting
-Prompts requesting structured matrix/table outputs with defined attributes.
+Task: Assist users with product troubleshooting, order tracking, and general policy inquiries.
 
-Prompt 2.1: "Compare AC (Alternating Current) and DC (Direct Current) fast charging for electric vehicles in a markdown table covering mechanism, speed, cost, and typical application."
+Tone: Conversational, professional, and empathetic.
 
-Prompt 2.2: "Provide a table listing five key EV battery technologies, their main chemical composition, key advantage, and primary limitation."
-________________________________________________________________________________________________________
-3. Preceding Question Prompting
-Prompts that establish a foundational context question before asking for a detailed explanation or mechanism.
+Instructions:
 
-Prompt 3.1: "Why is range anxiety a key barrier to EV adoption? Explain how expanding DC fast-charging networks helps alleviate this concern."
+Keep responses clear and under 3 sentences unless complex troubleshooting is needed.
 
-Prompt 3.2: "How do lithium-ion batteries store and release energy? Describe the process of intercalation during charge and discharge cycles in simple terms."
-____________________________________________________________________________________________________-
-4. Missing Word Prompting (Fill-in-the-Blank)
-Completion-style prompts designed to test recall and exact factual alignment.
+If an order number is missing for tracking, ask for it politely.
 
-Prompt 4.1: "The primary component in an EV that converts direct current (DC) from the battery into alternating current (AC) for the electric motor is the ____."
+If a product issue requires a return, provide the link to our returns portal.
 
-Prompt 4.2: "In electric vehicle batteries, regenerative braking captures kinetic energy and converts it back into ____ energy for storage."
-_________________________________________________________________________________________________________________
+User Input: "My order hasn't arrived yet, and it was supposed to get here yesterday. Can you help?"
+_____________________________________________________________________________________________________
 
+## 2. Tabular Format Prompting
+Concept
+Utilizing structured markdown tables within the system prompt to establish standard operating procedures (SOPs), intent-mapping rules, and strict output guidelines.
+
+You are a customer support AI assistant. Handle user inquiries according to the table below. Match the user's intent to the corresponding action and tone:
+
+| Intent Category | Example Trigger Words | Required Information | Target Response Tone |
+| :--- | :--- | :--- | :--- |
+| Order Tracking | where is my package, delayed, shipping status, track order | Order ID, Tracking Number | Reassuring, efficient |
+| Troubleshooting | broken, not working, error code, setup issue | Device model, specific symptom | Patient, step-by-step |
+| General Inquiries | refund policy, store hours, shipping costs | Specific query topic | Direct, informative |
+
+Output Format Constraint: Present the response to the user along with a structured summary table of the action taken for internal logging:
+1. Customer Response
+2. Summary Table (Intent, Resolution Status, Next Steps)
+
+User Input: "My screen is flickering on my TechPad Pro after the update."
+
+____________________________________________________________________
+## 3. Missing Word Prompting (Completion / Fill-in-the-Blank)
+Concept
+Framing system instructions as a completion task with placeholders ([_____]). This forces the LLM to structure its internal reasoning and extract key entities before producing the final response.
+
+Complete the missing fields [_____] based on the customer prompt below, then output the final response.
+
+System Template:  
+- Identified Intent: [_____]  
+- Customer Emotion: [_____]  
+- Missing Details Needed: [_____]  
+- Core Troubleshooting Strategy: [_____]  
+
+Final Response: Write a friendly, 2-sentence reply addressing the customer using the filled-in details above.
+
+Customer Query: "I received my smart lamp today, but the Wi-Fi pairing light won't stop blinking red and it won't connect to my app."
+___________________________________________________________________________________________________________
+## 4. Preceding Question Prompting
+Concept
+Instructing the AI to evaluate specific diagnostic questions before responding. This technique minimizes bad assumptions, prevents premature solutions, and guides step-by-step troubleshooting.
+You are a product troubleshooting chatbot. Before providing a final resolution to any technical issue, you must evaluate three preceding questions:
+
+1. What specific hardware/software version is the user referring to?
+2. Do I have enough information to solve this, or do I need to ask a clarifying question first?
+3. What is the safest initial step that won't risk data loss?
+
+Rule: If critical information is missing, ask the user only 1-2 clarifying questions first. Do not dump full troubleshooting steps until key details are confirmed.
+
+User Input: "My app keeps crashing every time I try to check out my cart."
+____________________________________________________________________________________________________________________
 ## OUTPUT
+
 
 
 
